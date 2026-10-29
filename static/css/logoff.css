@@ -1,0 +1,398 @@
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #111b78;
+    --blue: #5275bd;
+    --purple: #6544f5;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        125deg,
+        #e9f0ff,
+        #f5f3ff,
+        #e1efff
+    );
+    color: var(--navy);
+}
+
+/* ===== FUNDO DA PÁGINA ===== */
+.page {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 850px;
+    min-height: 480px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 24px;
+    background: linear-gradient(
+        135deg,
+        #e7edff,
+        #f7faff 52%,
+        #e1efff
+    );
+    box-shadow: 0 10px 35px rgba(52, 69, 145, 0.12);
+}
+
+/* Formas decorativas */
+.blob {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.blob-left {
+    width: 300px;
+    height: 280px;
+    left: -150px;
+    top: -70px;
+    border-radius: 45% 55% 58% 42%;
+    transform: rotate(-24deg);
+    background: linear-gradient(145deg, #9877ff, #c3baff);
+}
+
+.blob-right {
+    width: 280px;
+    height: 300px;
+    right: -150px;
+    top: -100px;
+    border-radius: 48% 52% 40% 60%;
+    transform: rotate(22deg);
+    background: linear-gradient(145deg, #d7e4ff, #a7d1ff);
+}
+
+.blob-bottom {
+    width: 350px;
+    height: 130px;
+    right: -60px;
+    bottom: -90px;
+    border-radius: 50%;
+    transform: rotate(-12deg);
+    background: linear-gradient(100deg, #d6d4ff, #9cccfb);
+}
+
+/* ===== CARTÃO CENTRAL ===== */
+.logout-card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 760px;
+    min-height: 420px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 6px 25px rgba(71, 85, 150, 0.06);
+    backdrop-filter: blur(8px);
+}
+
+/* ===== LOGO ===== */
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    width: 180px;
+    max-width: 70vw;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ===== ILUSTRAÇÃO DE LOGOFF ===== */
+.logout-illustration {
+    position: relative;
+    width: 135px;
+    height: 115px;
+    margin-bottom: 12px;
+    display: grid;
+    place-items: center;
+}
+
+.illustration-glow {
+    position: absolute;
+    inset: 5px;
+    border-radius: 40%;
+    transform: rotate(-8deg);
+    background: linear-gradient(135deg, #e6e3ff, #e5f0ff);
+}
+
+.door-icon {
+    position: relative;
+    z-index: 1;
+    width: 85px;
+    height: 85px;
+    display: grid;
+    place-items: center;
+    color: #5942e8;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #f0edff, #dcd8ff);
+    box-shadow: 0 8px 20px rgba(91, 73, 224, 0.16);
+}
+
+.door-icon svg {
+    width: 62px;
+    height: 62px;
+}
+
+/* Selo de confirmação */
+.check-badge {
+    position: absolute;
+    z-index: 2;
+    right: 3px;
+    bottom: 0;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #7656ff, #4d35e8);
+    box-shadow: 0 5px 14px rgba(88, 64, 230, 0.22);
+}
+
+.check-badge svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* Detalhes decorativos */
+.spark {
+    position: absolute;
+    width: 5px;
+    height: 18px;
+    border-radius: 10px;
+    background: #9479ff;
+}
+
+.spark-one {
+    left: 5px;
+    top: 15px;
+    transform: rotate(-35deg);
+}
+
+.spark-two {
+    left: 0;
+    top: 45px;
+    height: 15px;
+    transform: rotate(-75deg);
+}
+
+.spark-three {
+    right: 2px;
+    top: 12px;
+    height: 15px;
+    transform: rotate(30deg);
+}
+
+/* ===== TÍTULO E MENSAGEM ===== */
+h1 {
+    margin-top: 5px;
+    color: var(--navy);
+    font-size: clamp(25px, 3.5vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+    font-weight: 800;
+}
+
+.message {
+    margin-top: 14px;
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ===== BOTÃO VOLTAR AO INÍCIO ===== */
+.home-button {
+    min-height: 48px;
+    margin-top: 24px;
+    padding: 0 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(110deg, #7654ff, #4d35e8);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 0 6px 16px rgba(88, 64, 230, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 20px rgba(88, 64, 230, 0.28);
+}
+
+.home-button:focus-visible {
+    outline: 3px solid #25257c;
+    outline-offset: 4px;
+}
+
+.home-button span {
+    font-size: 21px;
+    line-height: 1;
+}
+
+/* ===== RESPONSIVIDADE PARA CELULARES ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .page {
+        min-height: 420px;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .logout-card {
+        min-height: 390px;
+        padding: 22px 12px;
+        border-radius: 16px;
+    }
+
+    .brand {
+        margin-bottom: 14px;
+    }
+
+    .logo {
+        width: 155px;
+    }
+
+    .logout-illustration {
+        width: 120px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .door-icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .door-icon svg {
+        width: 55px;
+        height: 55px;
+    }
+
+    .check-badge {
+        width: 36px;
+        height: 36px;
+    }
+
+    .check-badge svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    h1 {
+        font-size: clamp(22px, 6vw, 30px);
+        letter-spacing: -0.5px;
+    }
+
+    .message {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+
+    .home-button {
+        min-height: 44px;
+        margin-top: 20px;
+        padding: 0 18px;
+        font-size: 14px;
+    }
+
+    .blob-left {
+        left: -200px;
+    }
+
+    .blob-right {
+        right: -200px;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 360px) {
+    .page {
+        padding: 8px;
+    }
+
+    .logout-card {
+        padding: 20px 8px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .message {
+        font-size: 13px;
+    }
+}
+
+/* Respeita preferência por menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    .home-button {
+        transition: none;
+    }
+}
+
+/* Logo pequena no topo */
+.brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.brand-name {
+    color: #111b78;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.brand-name span {
+    color: #6544f5;
+}
