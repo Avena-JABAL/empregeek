@@ -12,7 +12,7 @@
 
 ---
 
-## 👥 Integrantes do projeto
+## Integrantes do projeto
 
 | Nome | Matrícula |
 | --- | --- |
@@ -28,8 +28,6 @@
 O **Conecta+** é uma proposta de plataforma digital que conecta jovens a oportunidades de trabalho, mentoria, capacitação e participação em projetos de impacto social.
 
 O projeto busca fortalecer o protagonismo juvenil, ampliar a empregabilidade e incentivar o empreendedorismo, reunindo em um só lugar recursos para que cada jovem possa descobrir seus interesses e dar os próximos passos em sua trajetória.
-
-> **Este repositório está em desenvolvimento.** Atualmente, reúne um protótipo visual com páginas iniciais; as funcionalidades descritas abaixo representam a visão planejada para a plataforma.
 
 ## O problema
 
@@ -50,9 +48,6 @@ Criar um espaço acessível e acolhedor em que jovens possam apresentar seus int
 | **Trilhas de aprendizado** | Percursos de desenvolvimento com certificações digitais e badges. |
 | **Fórum comunitário** | Espaço para troca de experiências e divulgação de iniciativas. |
 
-## Protótipo atual
-
-O projeto contém páginas de interface para a página inicial, login, cadastro e recuperação de senha, desenvolvidas com **HTML e CSS**. As telas representam o protótipo visual e não devem ser interpretadas como funcionalidades completas ou como um serviço de autenticação já integrado.
 
 ### Como visualizar
 
@@ -74,16 +69,12 @@ O projeto contém páginas de interface para a página inicial, login, cadastro 
 
 
 
-## 🌱 Impacto esperado
+## Impacto esperado
 
 - Facilitar o acesso dos jovens a oportunidades locais.
 - Incentivar a aprendizagem contínua e o desenvolvimento de habilidades.
 - Aproximar jovens de mentores e da comunidade.
 - Apoiar o protagonismo juvenil e o empreendedorismo.
-
-## Equipe
-
-Projeto acadêmico desenvolvido como parte de uma iniciativa para ampliar as oportunidades e conexões para jovens.
 
 ## Repositório
 
